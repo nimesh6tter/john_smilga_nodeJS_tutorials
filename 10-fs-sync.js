@@ -8,3 +8,4 @@ writeFileSync('./content/result-sync.txt','hey hey', {flag: 'a'})
 
 console.log('done with this task')
 console.log('starting the next one')
+//suncronous is reading the code line by line
