@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/nimesh6tter/john_smilga_nodeJS_tutorials/issues"
   },
-  "homepage": "https://github.com/nimesh6tter/john_smilga_nodeJS_tutorials#readme"
+  "homepage": "https://github.com/nimesh6tter/john_smilga_nodeJS_tutorials#readme",
+  "dependencies": {
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.12"
+  }
 }
