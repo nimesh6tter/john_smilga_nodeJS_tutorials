@@ -9,4 +9,4 @@ fs.readFile('./Async-awaitES6 -in10min/test.txt',{ encoding: 'utf-8' }, (err, da
         console.error('GOT DATA')
         console.log(data)
     }
-})
+})x
