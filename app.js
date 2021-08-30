@@ -1,12 +1,12 @@
-//error first callback
-const fs = require('fs')
+const { reject } = require("lodash");
 
-fs.readFile('./Async-awaitES6 -in10min/test.txt',{ encoding: 'utf-8' }, (err, data)=>{
-    if(err){
-        console.error('ERROR')
-        console.error(err)
-    } else {
-        console.error('GOT DATA')
-        console.log(data)
+const myPromise = new Promise((resolve, reject)=>{
+    const rand = Math.floor(Math.random()*2);
+    if(rand===0){
+        resolve()
+    }else{
+        reject()
     }
 })
+
+myPromise.then(()=>console.log("Success")).catch(()=>console.error("Something went wrong"))
