@@ -1,12 +1,8 @@
+//READ A FILE WITH PROMISES.. LESS CODE THAN 3.JS
 const { reject } = require("lodash");
+const fs = require('fs')
 
-const myPromise = new Promise((resolve, reject)=>{
-    const rand = Math.floor(Math.random()*2);
-    if(rand===0){
-        resolve()
-    }else{
-        reject()
-    }
-})
-
-myPromise.then(()=>console.log("Success")).catch(()=>console.error("Something went wrong"))
+fs.promises
+    .readFile('./Async-awaitES6 -in10min/test.txt', {encoding: 'utf-8'})
+    .then((data)=>console.log(data))
+    .catch((err)=>console.error(err))
