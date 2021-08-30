@@ -1,6 +1,14 @@
-const fetch = require('node-fetch')
+const fs = require('fs')
 
-fetch('https://pokeapi.co/api/v2/pokemon/ditto')
-    .then((res)=>res.json())
-    .then((data)=>console.log(data))
-    .catch((err)=>console.error(err))
+const loadfile = async()=>{
+    try{
+        const data = await fs.promises.readFile('./Async-awaitES6 -in10min/test.txt',{encoding: 'utf-8'})
+    console.log(data)
+    }
+    catch{
+        const data = await fs.promises.readFile('./Async-awaitES6 -in10min/test.txt',{encoding: 'utf-8'})
+        console.log(data)
+    }
+}
+
+loadfile()
